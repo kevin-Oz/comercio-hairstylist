@@ -17,11 +17,15 @@ class _BarberPageState extends State<BarberPage> {
       body: ListView(
         padding: EdgeInsets.all(10),
         children: [
-          _cardTipo1(),
+          // _cardTipo1(),
           SizedBox(
             height: 30.0,
           ),
           _cardTipo2(),
+          SizedBox(
+            height: 30.0,
+          ),
+          _cardTipo1()
         ],
       ),
     );
@@ -34,19 +38,20 @@ class _BarberPageState extends State<BarberPage> {
       child: Column(
         children: [
           ListTile(
-            title: Text('titulo1'),
-            subtitle: Text('hola we estas bien ?'),
+            title: Text('Description'),
+            subtitle: Text('We are a big team ....'),
             leading: Icon(
               Icons.photo_album,
               color: Colors.blue,
             ),
           ),
-          Row(
+          /* Row(
             children: [
               FlatButton(onPressed: () {}, child: Text("cancelar")),
               FlatButton(onPressed: () {}, child: Text("ok"))
             ],
           )
+           */
         ],
       ),
     );
@@ -54,7 +59,7 @@ class _BarberPageState extends State<BarberPage> {
 
   Widget _cardTipo2() {
     final urlImage =
-        "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/130238819/original/d4096d4950eba421600f21c6c753c19375222eb6/draw-you-a-landscape-image-with-ms-paint.png";
+        "https://res.cloudinary.com/idemo/image/upload/c_fill,h_247,w_370/friends.jpg";
     final card = Container(
       child: Column(
         children: [
@@ -67,7 +72,7 @@ class _BarberPageState extends State<BarberPage> {
           ),
           Container(
             padding: EdgeInsets.all(10),
-            child: Text("soy un texto mamalon"),
+            child: Text("Team Job"),
           )
         ],
       ),

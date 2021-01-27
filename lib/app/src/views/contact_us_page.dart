@@ -11,7 +11,9 @@ class _ContactUsPageState extends State<ContactUsPage> {
   String _nombre = "";
   String _fecha = "";
   List<String> _poderes = ['QUIFF', 'BEARD', 'EXECUTIVE', 'FADE'];
-  String _opcionSeleccionada = "CORTE";
+  String _opcionSeleccionada = "QUIFF";
+  //List<String> _poderes = ['volar', 'rayos x'];
+  //String _opcionSeleccionada = "volar";
 
   TextEditingController _dateController = new TextEditingController();
 

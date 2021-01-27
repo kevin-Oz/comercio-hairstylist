@@ -258,14 +258,11 @@ class _MyHomePageState extends State<MyHomePage> {
             DrawerHeader(
               child: Text(
                 'RUFFIANS BARBER',
-                style: TextStyle(
-                    letterSpacing: 2.0,
-                    fontFamily: 'Nunito',
-                    fontSize: 30.0,
-                    color: Colors.black.withOpacity(0.6),
-                    fontWeight: FontWeight.bold),
               ),
               decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/ruffians.png"),
+                    fit: BoxFit.cover),
                 color: Colors.amber,
               ),
             ),
