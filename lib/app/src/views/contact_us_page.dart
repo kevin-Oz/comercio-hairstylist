@@ -10,8 +10,8 @@ class ContactUsPage extends StatefulWidget {
 class _ContactUsPageState extends State<ContactUsPage> {
   String _nombre = "";
   String _fecha = "";
-  List<String> _poderes = ['volar', 'rayos x'];
-  String _opcionSeleccionada = "volar";
+  List<String> _poderes = ['QUIFF', 'BEARD', 'EXECUTIVE', 'FADE'];
+  String _opcionSeleccionada = "CORTE";
 
   TextEditingController _dateController = new TextEditingController();
 
