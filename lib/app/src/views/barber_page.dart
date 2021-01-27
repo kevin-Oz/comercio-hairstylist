@@ -13,6 +13,7 @@ class _BarberPageState extends State<BarberPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Barbers'),
+        backgroundColor: Colors.amber,
       ),
       body: ListView(
         padding: EdgeInsets.all(10),

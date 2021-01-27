@@ -22,6 +22,7 @@ class _ContactUsPageState extends State<ContactUsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Contact Us'),
+        backgroundColor: Colors.amber,
       ),
       body: ListView(
         padding: EdgeInsets.all(15.7),
@@ -123,8 +124,12 @@ class _ContactUsPageState extends State<ContactUsPage> {
   }
 
   Widget _crearPersona() {
-    return ListTile(
-      title: Text('El nombre es : $_nombre'),
+    return Center(
+      child: RaisedButton(
+        color: Colors.amber,
+        onPressed: () {},
+        child: Text('Send'),
+      ),
     );
   }
 }
