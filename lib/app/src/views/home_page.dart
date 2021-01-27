@@ -15,20 +15,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.amber,
         title: Text(
           'RuffBookig',
           style: TextStyle(
-              fontFamily: 'FirSans', fontSize: 20.0, color: Colors.black),
+              fontFamily: 'FirSans', fontSize: 26.0, color: Colors.black),
         ),
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {},
-          color: Colors.black,
-        ),
       ),
-      body: ListView(
+      body: Center(
+          child: ListView(
         children: [
           Stack(
             children: [
@@ -253,6 +249,80 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           )
         ],
+      )),
+      drawer: Drawer(
+        elevation: 16,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: Text(
+                'RUFFIANS BARBER',
+                style: TextStyle(
+                    letterSpacing: 2.0,
+                    fontFamily: 'Nunito',
+                    fontSize: 30.0,
+                    color: Colors.black.withOpacity(0.6),
+                    fontWeight: FontWeight.bold),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.amber,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                'Barbers',
+                style: TextStyle(
+                  fontFamily: 'FirSans',
+                  fontSize: 20.0,
+                  color: Colors.black,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pushNamed('/barber');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'History',
+                style: TextStyle(
+                  fontFamily: 'FirSans',
+                  fontSize: 20.0,
+                  color: Colors.black,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pushNamed('/history');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'Contact Us',
+                style: TextStyle(
+                  fontFamily: 'FirSans',
+                  fontSize: 20.0,
+                  color: Colors.black,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pushNamed('/contact');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'About Us',
+                style: TextStyle(
+                  fontFamily: 'FirSans',
+                  fontSize: 20.0,
+                  color: Colors.black,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pushNamed('/about');
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

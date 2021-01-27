@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hairstylist/app/src/views/home_page.dart';
 
+import 'app/src/routes/route.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
+      routes: getRoutes(),
     );
   }
 }
